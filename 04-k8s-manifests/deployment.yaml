@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: intent-classifier
-          image: <image-name>
+          image: akuldevalli/intent-classifier:latest
           ports:
-            - containerPort: 6000
+            - containerPort: 8080
