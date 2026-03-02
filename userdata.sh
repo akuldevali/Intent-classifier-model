@@ -19,7 +19,8 @@ cd $APP_DIR
 apt update -y
 apt install -y git python3 python3-venv python3-pip nginx
 
-git clone https://github.com/iam-veeramalla/Intent-classifier-model.git .
+git clone https://github.com/akuldevali/Intent-classifier-model.git .
+git checkout vms
 
 python3 -m venv .venv
 source .venv/bin/activate
