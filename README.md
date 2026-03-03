@@ -17,10 +17,10 @@ This small project demonstrates:
 
 3. Run the API:
     python app.py
-    The API will be available at http://127.0.0.1:6000
+    The API will be available at http://127.0.0.1:8080
 
 4. Example request:
-    curl -X POST http://127.0.0.1:6000/predict -H "Content-Type: application/json" -d '{"text":"I want to cancel my subscription"}'
+    curl -X POST http://127.0.0.1:8080/predict -H "Content-Type: application/json" -d '{"text":"I want to cancel my subscription"}'
 
     Response:
     {

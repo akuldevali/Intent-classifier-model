@@ -42,7 +42,7 @@ spec:
     model:
       modelFormat:
         name: sklearn
-      storageUri: "<downloadable location>"
+      storageUri: "https://github.com/akuldevali/Intent-classifier-model/releases/download/v1.0/intent_model.pkl"
       resources:
         requests:
           cpu: "100m"
@@ -58,7 +58,7 @@ kubectl get inferenceservice intent-classifier -n intent
 ### Port-forward to access the model
 
 ```
-kubectl -n ml port-forward svc/<svc-name> 8080:80
+kubectl port-forward svc/intent-classifier-predictor 8080:80 -n intent --address 0.0.0.0
 ```
 
 ### Inference the Model
